@@ -219,6 +219,26 @@ cd frontend
 npm test
 ```
 
+
+## 🧬 After cloning:
+
+```bash
+🚚 Backend:
+     cd backend
+python -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+
+🛩️ Frontend:
+cd frontend
+npm install
+
+📲 Then run the servers:
+ cd backend && python -m uvicorn app.main:app --reload --port 8000
+cd frontend && npm run dev -- --hostname 0.0.0.0 --port 3000
+```
+
+
 ## 📚 Documentation
 
 - **API Specification**: See `docs/API.md` for detailed endpoint documentation
